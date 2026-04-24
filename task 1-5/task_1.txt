@@ -1,0 +1,35 @@
+Last login: TUE Apr 23 11:22:05 2026 from 192.168.1.96
+
+alek@alek:~$ mkdir test
+alek@alek:~$ cd test
+alek@alek:~/test$ ls
+alek@alek:~/test$
+alek@alek:~/test$ cat <<EOT >> pets.txt
+cat
+dog
+hamster
+EOT
+alek@alek:~/test$ cat pets.txt
+cat
+dog
+hamster
+alek@alek:~/test$ cat <<EOT >> pack_animals.txt
+horse
+camel
+donkey
+EOT
+alek@alek:~/test$ cat pack_animals.txt
+horse
+camel
+donkey
+alek@alek:~/test$ cat pets.txt pack_animals.txt > animals.txt
+alek@alek:~/test$ cat animals.txt
+cat
+dog
+hamster
+horse
+camel
+donkey
+alek@alek:~/test$ mv animals.txt human_friends.txt
+alek@alek:~/test$ ls
+human_friends.txt  pack_animals.txt  pets.txt

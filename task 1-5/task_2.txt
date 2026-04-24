@@ -1,0 +1,7 @@
+alek@alek:~/test$ mkdir newdir
+alek@alek:~/test$ mv human_friends.txt newdir
+alek@alek:~/test$ ls
+newdir  pack_animals.txt  pets.txt
+alek@alek:~/test$ ls newdir
+human_friends.txt
+
